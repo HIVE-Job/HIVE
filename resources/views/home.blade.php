@@ -55,7 +55,7 @@
 <span class=" icon-keyboard_arrow_down"></span>
 </a>
 </section>
-<section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('theme/jobboard/images/hero_1.jpg');">
+<section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('{{ asset('assets/images/hero_1.jpg')}}');">
 <div class="container">
 <div class="row mb-5 justify-content-center">
 <div class="col-md-7 text-center">
@@ -103,7 +103,7 @@
 @foreach($jobs as $job ) 
 
 <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
-<a href="theme/jobboard/job-single.html"></a>
+<a href="{{ route('single.job',$job->id) }}"></a>
 <div class="job-listing-logo">
 <img src="{{ asset('assets/images/'.$job->image.'')}}" alt="Free Website Template by Free-Template.co" class="img-fluid">
 </div>
@@ -144,7 +144,7 @@
 </div>
 </div>
 </section>
-<section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('theme/jobboard/images/hero_1.jpg');">
+<section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('{{ asset('assets/images/hero_1.jpg')}}');">
 <div class="container">
 <div class="row align-items-center">
 <div class="col-md-8">
@@ -225,8 +225,8 @@
 </div>
 </div>
 </section>
-<section class="pt-5 bg-image overlay-primary fixed overlay" style="background-image: url('theme/jobboard/images/hero_1.jpg');">
-<div class="container">
+<section class="pt-5 bg-image overlay-primary fixed overlay" style="background-image: url('{{ asset('assets/images/hero_1.jpg')}}');">
+<div class="container" style="margin-bottom: -24px;">
 <div class="row">
 <div class="col-md-6 align-self-center text-center text-md-left mb-5 mb-md-0">
 <h2 class="text-white">Get The Mobile Apps</h2>

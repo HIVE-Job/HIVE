@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <section  class="section-hero overlay inner-page bg-image" style="margin-top: -35px; background-image: url('{{asset('assets/images/hero_1.jpg')}}');" id="home-section">
 <div class="container">
 <div class="row">
