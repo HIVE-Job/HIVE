@@ -44,26 +44,7 @@
 <li style="padding-left: 544px;"><a href="index.html" class="nav-link active">Home</a></li>
 <li><a href="theme/jobboard/about.html">About</a></li>
 <li class="has-children">
-<a href="theme/jobboard/job-listings.html">Job Listings</a>
-<ul class="dropdown">
-<li><a href="theme/jobboard/job-single.html">Job Single</a></li>
-<li><a href="theme/jobboard/post-job.html">Post a Job</a></li>
-</ul>
-</li>
-<li class="has-children">
-<a href="theme/jobboard/services.html">Pages</a>
-<ul class="dropdown">
-<li><a href="theme/jobboard/services.html">Services</a></li>
-<li><a href="theme/jobboard/service-single.html">Service Single</a></li>
-<li><a href="theme/jobboard/blog-single.html">Blog Single</a></li>
-<li><a href="theme/jobboard/portfolio.html">Portfolio</a></li>
-<li><a href="theme/jobboard/portfolio-single.html">Portfolio Single</a></li>
-<li><a href="theme/jobboard/testimonials.html">Testimonials</a></li>
-<li><a href="theme/jobboard/faq.html">Frequently Ask Questions</a></li>
-<li><a href="theme/jobboard/gallery.html">Gallery</a></li>
-</ul>
-</li>
-<li><a href="theme/jobboard/blog.html">Blog</a></li>
+
 <li><a href="theme/jobboard/contact.html">Contact</a></li>
 
 
@@ -81,11 +62,23 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                <a class="dropdown-item" href="{{ route('profile') }}">
+                                         Profile
+                                    </a>    
+                                    <a class="dropdown-item" href="{{ route('applications') }}">
+                                         Applications
+                                    </a>   
+                                    <a class="dropdown-item" href="{{ route('saved.jobs') }}">
+                                         Saved Jobs
+                                    </a>  
+                                
+                                <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                   
+                                    
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
